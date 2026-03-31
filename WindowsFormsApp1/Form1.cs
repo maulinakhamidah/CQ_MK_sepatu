@@ -34,7 +34,7 @@ namespace WindowsFormsApp1
         }
 
         private void btnConnect_Click(object sender, EventArgs e)
-        {
+        { (\\done)
             try
             {
                 Koneksi();
@@ -169,6 +169,6 @@ namespace WindowsFormsApp1
                 MessageBox.Show(ex.Message);
             }
         }
-        (\\ done)
+        
     } 
 } 
