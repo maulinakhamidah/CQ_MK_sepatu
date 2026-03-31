@@ -34,7 +34,7 @@ namespace WindowsFormsApp1
         }
 
         private void btnConnect_Click(object sender, EventArgs e)
-        { (\\done)
+        { 
             try
             {
                 Koneksi();
@@ -49,13 +49,13 @@ namespace WindowsFormsApp1
         }
 
         private void btnHitungMhs_Click(object sender, EventArgs e)
-        {
+        { 
             try
             {
                 Koneksi();
                 conn.Open();
 
-                string query = "SELECT COUNT(*) FROM Mahasiswa";
+                string query = "SELECT COUNT(*) FROM Mahasiswa"; (\\done)
 
                 cmd = new SqlCommand(query, conn);
                 int jumlah = Convert.ToInt32(cmd.ExecuteScalar());
