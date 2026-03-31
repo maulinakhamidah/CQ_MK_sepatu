@@ -100,7 +100,7 @@ namespace WindowsFormsApp1
                 string query = "UPDATE Mahasiswa SET Alamat='Yogyakarta' WHERE NIM='23110100001'"; (\\done)
                 cmd = new SqlCommand(query, conn);
                 int hasil = cmd.ExecuteNonQuery(); 
-                MessageBox.Show(hasil.ToString()); (\\done)
+                MessageBox.Show(hasil.ToString()); 
 
                 conn.Close();
             }
@@ -117,7 +117,7 @@ namespace WindowsFormsApp1
                 Koneksi();
                 conn.Open();
 
-                string query = "SELECT COUNT(*) FROM Dosen";
+                string query = "SELECT COUNT(*) FROM Dosen"; (\\done)
                 cmd = new SqlCommand(query, conn);
 
                 int jumlah = Convert.ToInt32(cmd.ExecuteScalar());
