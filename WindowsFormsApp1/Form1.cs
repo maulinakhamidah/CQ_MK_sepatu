@@ -142,7 +142,7 @@ namespace WindowsFormsApp1
                 int hasil = cmd.ExecuteNonQuery();
                 if (hasil > 0)
                     MessageBox.Show("SKS berhasil diperbarui!");
-                else (\\done)
+                else 
                     MessageBox.Show("Data tidak ditemukan.");
                 conn.Close();
             }
@@ -158,7 +158,7 @@ namespace WindowsFormsApp1
             {
                 Koneksi();
                 conn.Open();
-                string query = "INSERT INTO ProgramStudi (KodeProdi, NamaProdi) VALUES ('MI01', 'Manajemen Informatika')";
+                string query = "INSERT INTO ProgramStudi (KodeProdi, NamaProdi) VALUES ('MI01', 'Manajemen Informatika')"; (\\done)
                 cmd = new SqlCommand(query, conn);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Data Program Studi berhasil ditambahkan!");
