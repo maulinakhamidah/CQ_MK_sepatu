@@ -137,12 +137,12 @@ namespace WindowsFormsApp1
             {
                 Koneksi();
                 conn.Open();
-                string query = "UPDATE MataKuliah SET SKS = 4 WHERE KodeMK = 'IF210101'"; (\\done)
+                string query = "UPDATE MataKuliah SET SKS = 4 WHERE KodeMK = 'IF210101'"; 
                 cmd = new SqlCommand(query, conn);
                 int hasil = cmd.ExecuteNonQuery();
                 if (hasil > 0)
                     MessageBox.Show("SKS berhasil diperbarui!");
-                else
+                else (\\done)
                     MessageBox.Show("Data tidak ditemukan.");
                 conn.Close();
             }
