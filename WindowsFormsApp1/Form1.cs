@@ -13,7 +13,7 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form 
     {
-        SqlConnection conn;()
+        SqlConnection conn;
         SqlCommand cmd;
 
         public Form1()
@@ -25,7 +25,7 @@ namespace WindowsFormsApp1
         {
             conn = new SqlConnection(
                 "Data Source=DESKTOP-RAM20FI\\APRILIYA;Initial Catalog=DBAkademikADO;Integrated Security=True"
-            );
+            );(\\done)
         }
 
         private void Form1_Load(object sender, EventArgs e)
