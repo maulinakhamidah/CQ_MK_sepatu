@@ -76,7 +76,7 @@ namespace WindowsFormsApp1
                 Koneksi();
                 conn.Open();
 
-                string query = "SELECT COUNT(*) FROM MataKuliah"; (\\done)
+                string query = "SELECT COUNT(*) FROM MataKuliah"; 
                 cmd = new SqlCommand(query, conn);
 
                 int jumlah = Convert.ToInt32(cmd.ExecuteScalar());
@@ -97,7 +97,7 @@ namespace WindowsFormsApp1
                 Koneksi();
                 conn.Open();
 
-                string query = "UPDATE Mahasiswa SET Alamat='Yogyakarta' WHERE NIM='23110100001'";
+                string query = "UPDATE Mahasiswa SET Alamat='Yogyakarta' WHERE NIM='23110100001'"; (\\done)
                 cmd = new SqlCommand(query, conn);
                 int hasil = cmd.ExecuteNonQuery();
                 MessageBox.Show(hasil.ToString());
