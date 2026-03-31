@@ -122,7 +122,7 @@ namespace WindowsFormsApp1
 
                 int jumlah = Convert.ToInt32(cmd.ExecuteScalar());
 
-                MessageBox.Show("Jumlah Dosen: " + jumlah.ToString()); 
+                MessageBox.Show("Jumlah Dosen: " + jumlah.ToString()); (\\done)
                 conn.Close();
             }
             catch (Exception ex)
