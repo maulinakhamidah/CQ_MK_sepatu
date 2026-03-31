@@ -99,7 +99,7 @@ namespace WindowsFormsApp1
 
                 string query = "UPDATE Mahasiswa SET Alamat='Yogyakarta' WHERE NIM='23110100001'"; (\\done)
                 cmd = new SqlCommand(query, conn);
-                int hasil = cmd.ExecuteNonQuery();
+                int hasil = cmd.ExecuteNonQuery(); (\\done)
                 MessageBox.Show(hasil.ToString());
 
                 conn.Close();
