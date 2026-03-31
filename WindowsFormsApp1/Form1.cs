@@ -55,10 +55,10 @@ namespace WindowsFormsApp1
                 Koneksi();
                 conn.Open();
 
-                string query = "SELECT COUNT(*) FROM Mahasiswa"; (\\done)
+                string query = "SELECT COUNT(*) FROM Mahasiswa"; 
 
                 cmd = new SqlCommand(query, conn);
-                int jumlah = Convert.ToInt32(cmd.ExecuteScalar());
+                int jumlah = Convert.ToInt32(cmd.ExecuteScalar()); (\\done)
 
                 txtHasil.Text = jumlah.ToString();
                 conn.Close();
