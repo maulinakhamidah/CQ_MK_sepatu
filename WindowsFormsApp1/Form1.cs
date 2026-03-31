@@ -117,12 +117,12 @@ namespace WindowsFormsApp1
                 Koneksi();
                 conn.Open();
 
-                string query = "SELECT COUNT(*) FROM Dosen"; (\\done)
+                string query = "SELECT COUNT(*) FROM Dosen"; 
                 cmd = new SqlCommand(query, conn);
 
                 int jumlah = Convert.ToInt32(cmd.ExecuteScalar());
 
-                MessageBox.Show("Jumlah Dosen: " + jumlah.ToString()); (\\done)
+                MessageBox.Show("Jumlah Dosen: " + jumlah.ToString()); 
                 conn.Close();
             }
             catch (Exception ex)
@@ -137,7 +137,7 @@ namespace WindowsFormsApp1
             {
                 Koneksi();
                 conn.Open();
-                string query = "UPDATE MataKuliah SET SKS = 4 WHERE KodeMK = 'IF210101'";
+                string query = "UPDATE MataKuliah SET SKS = 4 WHERE KodeMK = 'IF210101'"; (\\done)
                 cmd = new SqlCommand(query, conn);
                 int hasil = cmd.ExecuteNonQuery();
                 if (hasil > 0)
