@@ -161,10 +161,10 @@ namespace WindowsFormsApp1
                 string query = "INSERT INTO ProgramStudi (KodeProdi, NamaProdi) VALUES ('MI01', 'Manajemen Informatika')"; 
                 cmd = new SqlCommand(query, conn);
                 cmd.ExecuteNonQuery(); 
-                MessageBox.Show("Data Program Studi berhasil ditambahkan!"); (\\done)
+                MessageBox.Show("Data Program Studi berhasil ditambahkan!"); 
                 conn.Close();
             }
-            catch (Exception ex)
+            catch (Exception ex) (\\done)
             {
                 MessageBox.Show(ex.Message);
             }
