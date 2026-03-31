@@ -58,7 +58,7 @@ namespace WindowsFormsApp1
                 string query = "SELECT COUNT(*) FROM Mahasiswa"; 
 
                 cmd = new SqlCommand(query, conn);
-                int jumlah = Convert.ToInt32(cmd.ExecuteScalar()); (\\done)
+                int jumlah = Convert.ToInt32(cmd.ExecuteScalar()); 
 
                 txtHasil.Text = jumlah.ToString();
                 conn.Close();
@@ -76,7 +76,7 @@ namespace WindowsFormsApp1
                 Koneksi();
                 conn.Open();
 
-                string query = "SELECT COUNT(*) FROM MataKuliah";
+                string query = "SELECT COUNT(*) FROM MataKuliah"; (\\done)
                 cmd = new SqlCommand(query, conn);
 
                 int jumlah = Convert.ToInt32(cmd.ExecuteScalar());
