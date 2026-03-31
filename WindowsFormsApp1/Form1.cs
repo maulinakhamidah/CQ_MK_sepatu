@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class Form1 : Form (\\done)
     {
         SqlConnection conn;
         SqlCommand cmd;
@@ -164,7 +164,7 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Data Program Studi berhasil ditambahkan!"); 
                 conn.Close();
             }
-            catch (Exception ex) (\\done)
+            catch (Exception ex) 
             {
                 MessageBox.Show(ex.Message);
             }
